@@ -7,7 +7,7 @@ const Personal = () =>  {
   const [value, setValue] =  React.useState('');
   
   return (
-    <div className='w-full h-screen flex flex-col px-6 pt-8'>
+    <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-3 md:mx-auto md:bg-green-50 md:rounded-3xl'>
         <h2 className=' font-semibold text-xl mb-5'> Confirm your Personal Information </h2>
         <img src="Images/Jane.jpg" alt="Jane portrait" className='rounded-full w-20 h-20 ml-3 self-center' />
         <div className='my-3 flex flex-col justify-center items-center'>

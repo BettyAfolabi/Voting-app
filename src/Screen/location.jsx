@@ -7,7 +7,7 @@ const Location = () => {
   const [value, setValue] = React.useState('');
   
   return(
-    <div className='w-full h-screen flex flex-col px-6 pt-12'>
+    <div className='w-full h-screen flex flex-col px-6 pt-12 md:w-80 md:h-full md:my-3 md:mx-auto md:bg-green-50 md:rounded-3xl'>
         <p className='mb-2 font-medium text-gray-600 text-sm'>Choose Polling Unit</p>
         <select onChange={(e) => handleChange(e) } className='w-full h-12 rounded-md border-1 border-gray-200 px-2 mb-5 bg-gray-100'>
           <option selected> Select Location</option>

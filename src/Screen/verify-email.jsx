@@ -5,8 +5,8 @@ import Button from '../components/button';
 const VerifyEmail = () => {
 
     return (
-      <div className='w-full h-screen flex flex-col box-border'>
-          <nav className='w-screen bg-green-800 flex flex-row h-20 p-5'>
+      <div className='w-full h-screen flex flex-col box-border md:w-80 md:h-full md:my-3 md:mx-auto md:bg-green-50 md:rounded-3xl'>
+          <nav className='w-screen bg-green-800 flex flex-row h-20 p-5 md:w-full'>
             <img src="Images/INEC-logo .png" alt="INEC logo" className=' basis-1/4 rounded-lg w-3 h-12'/>
             <h2 className='basis-3/4 text-white justify-center items-center text-2xl pl-3 font-normal break-normal'>Your PVC is Ready!</h2>
           </nav>

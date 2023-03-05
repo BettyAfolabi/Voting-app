@@ -6,7 +6,7 @@ const Collection = () => {
     const [value, setValue] = React.useState('');
 
     return (
-      <div className='w-full h-screen flex flex-col font-sans p-3  '>
+      <div className='w-full h-screen flex flex-col font-sans p-3  md:w-80 md:h-full md:my-3 md:mx-auto md:bg-green-50 md:rounded-3xl'>
           <h3 className='text-2xl font-semibold mt-4 mb-4'>PVC Status</h3>
           <div className='justify-center items-center  self-center font-semibold'>
             <img src="Images/Jane.jpg" alt="Jane portrait" className='rounded-full w-20 h-20 ml-3' />

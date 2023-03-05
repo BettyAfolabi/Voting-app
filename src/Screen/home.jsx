@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className='w-full h-screen flex flex-col items-center justify-center px-6'>
+    <div className='w-full h-screen flex flex-col items-center justify-center px-6 md:w-80 md:h-100 md:my-3 md:mx-auto md:bg-green-50 md:rounded-3xl'>
         <div className='w-40 h-40 rounded-full bg-green-600 mb-10 p-4'>
           <Emoji symbol="😃" label="smiling-face" class="emoji"/>
         </div>
