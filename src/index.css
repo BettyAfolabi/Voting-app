@@ -1,0 +1,15 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.emoji{
+  font-size: 5rem;
+  padding-left: .7rem;
+}
+
+.wrapper{
+  width: 60%;
+  margin: auto;
+  padding: 0
+}
