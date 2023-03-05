@@ -16,5 +16,5 @@ hertechtrail cohort 5 capstone project
  - authenticating form
  
  ### Links
- - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+ - Solution URL: [Add solution URL here](https://github.com/BettyAfolabi/Voting-app)
+- Live Site URL: [Add live site URL here](https://votecast.netlify.app/)
