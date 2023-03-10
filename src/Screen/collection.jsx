@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Button from '../components/button';
+import TextInput from '../components/textinput';
 
 const Collection = () => {
     const [value, setValue] = React.useState('');
@@ -10,14 +11,15 @@ const Collection = () => {
           <h3 className='text-2xl font-semibold mt-4 mb-4'>PVC Status</h3>
           <div className='justify-center items-center  self-center font-semibold'>
             <img src="Images/picture.jpg" alt="User's picture" className='rounded-full w-20 h-20 ml-3' />
-            <h5 className='pb-2 pt-2 text-gray-500'>Hello User's Name</h5>
-            <h5 className='text-gray-500 text-center pb-3'>User's no</h5>
+            <h5 className='pb-2 pt-2 text-gray-800'>Hello User's Name</h5>
+            <h5 className=' text-center text-gray-800'>User's no</h5>
           </div>
-          <p className='mt-3 text-sm font-semibold pb-2'>Polling Unit</p>  
-          <p className='w-full h-14 rounded-md border-1 border-gray-200 p-2 mb-2 bg-gray-100 text-gray-700'>House 12, Benjamin street, Ikorodu, Lagos</p>
-          <p className='mt-1 text-sm font-semibold pb-2'>Collection Center</p>
-          <p className='w-full h-14 rounded-md border-1 border-gray-200 p-2 mb-2 bg-gray-100 text-gray-700'>House 12, Benjamin street, Ikorodu, Lagos</p>
-          <p className='text-gray-600 font-light '>Change collection center? 
+          <p className='mt-3 text-sm font-semibold pb-2 md:text-lg md:pt-4'>Polling Unit</p>  
+          <TextInput value={value} placeholder="Chosen Polling Unit" onChange={setValue}/>
+          <p className='mt-1 text-sm font-semibold pb-2 md:text-lg md:pt-4'>Collection Center</p>
+          <TextInput value={value} placeholder="Chosen Collection Center" onChange={setValue}/>
+
+          <p className='text-gray-600 font-light mt-5'>Change collection center? 
             <Link to={'/Location'} className='w-full text-green-500' >
                  Resend
             </Link>
