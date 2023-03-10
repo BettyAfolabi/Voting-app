@@ -1,29 +1,58 @@
-import React from 'react'
+import React from 'react';
 import Button from '../components/button'
-import TextInput from '../components/textinput'
-import { Link } from 'react-router-dom'
+import FormInput from '../components/formInput';
+import { useNavigate } from 'react-router-dom';
 
 
 const Register = () => {
-  const [value, setValue] = React.useState('')
-  
+  const navigate = useNavigate();
+  const [values, setValues] = React.useState({
+    Identification: "",
+  });
+
+  const inputs =[
+    {
+      id: 1,
+      name: "identification",
+      type: "text",
+      placeholder: "Enter ID No",
+      errorMessage: "It should be a valid identification number!",
+      pattern: "[0-9]{10,23}$",
+      required: true,
+    }
+  ];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+     navigate('/verify-identity');
+  };
+
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
+    console.log(values);
+
   return(
-    <div className=' w-full h-screen flex flex-col px-5 pt-12 box-border font-sans md:w-80 md:h-full md:my-3 md:mx-auto md:bg-green-50 md:rounded-3xl '>
-        <h2 className=' font-semibold text-2xl mb-1'> Register </h2>
-        <p className='mb-10 font-medium text-gray-600 text-sm'>Choose an ID and enter number</p>
-        <select onChange={(e) => handleChange(e) } placeholder='Choose ID type' className='w-full h-12 rounded-md border-1 border-gray-200 px-2 mb-5 bg-gray-100'>
-        <option selected className='text-gray-100 text-xs font-thin'> Choose ID type</option>
-          <option value="passport">Passport</option>
-          <option value="nin">NIN</option>
-          <option value="social">Social Security number</option>
-          <option value="license">Driver's license</option>
-   		  </select>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Enter ID No.' />
-        <Link to={'/Verify-identity'} className='w-full mt-60 md:mb-3' >
-            <Button label="Proceed" handleClick={() => {}} />
-        </Link>
+    <div className=' w-full h-screen flex flex-col px-5 pt-12 box-border font-sans md:w-2/5 md:h-2/4 md:my-20 md:p-8 md:mx-auto md:items-center  md:bg-green-50 md:rounded-3xl '>
+       <form onSubmit={handleSubmit}>
+          <h1 className='font-bold text-2xl mb-5'>Register</h1>
+          <h4 className='mb-2 font-medium text-gray-700 text-base'>Choose an ID and enter number</h4>
+          <select onChange={onChange} errorMessage = "Must choose ID Type!" required={true} >
+            <option value={''} className='text-gray-700 text-sm'>Select ID Type</option>
+            <option value= 'passport'>Passport</option>
+            <option value= 'nin'>NIN</option>
+            <option value= 'social'>Social Security number</option>
+            <option value= 'License'>Driver's License</option>
+          </select>
+          {inputs.map((input) => (
+            <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
+          ))}
+          <Button type="button" label="Proceed" handleClick={() => {}} onClick={handleSubmit} />
+       </form>
     </div>
-  )
-}  
+  );
+};
 
 export default Register;

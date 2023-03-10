@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import OTPInput, { ResendOTP } from "otp-input-react";
 import { Link } from 'react-router-dom'
 import Button from '../components/button';
