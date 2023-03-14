@@ -3,8 +3,4 @@
 @tailwind components;
 @tailwind utilities;
 
-.emoji{
-  font-size: 5rem;
-  padding-left: .7rem;
-}
 

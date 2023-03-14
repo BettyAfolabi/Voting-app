@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/button'
 import FormInput from '../components/formInput';
 import { useNavigate } from 'react-router-dom';
+import "../App.css";
 
 const Auth = () => {
     const navigate = useNavigate();
@@ -22,7 +23,7 @@ const Auth = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-     navigate('/');
+     navigate('/selectvote');
   };
 
   const onChange = (e) => {
@@ -32,7 +33,7 @@ const Auth = () => {
     console.log(values);
 
     return(
-        <div className='w-full h-screen flex flex-col px-6 pt-12 md:w-2/5 md:h-2/4 md:my-20 md:p-8 md:mx-auto md:items-center  md:bg-green-50 md:rounded-3xl'>
+        <div className='w-full h-screen flex flex-col items-center justify-center px-6 pt-12 app'>
             <form onSubmit={handleSubmit}>
                 <h5 className=' font-semibold text-2xl mb-5'> Authentication </h5>
                 {inputs.map((input) => (

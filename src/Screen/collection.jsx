@@ -2,16 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Button from '../components/button';
 import TextInput from '../components/textinput';
+import '../App.css'
 
 const Collection = () => {
     const [value, setValue] = React.useState('');
 
     return (
-      <div className='w-full h-screen flex flex-col font-sans p-3 md:w-1/3 md:h-2/4 md:my-20 md:p-8 md:mx-auto md:items-center  md:bg-green-50 md:rounded-3xl'>
-          <h3 className='text-2xl font-semibold mt-4 mb-4'>PVC Status</h3>
+      <div className='w-full h-screen flex flex-col font-sans justify-center items-center app'>
+        <div className='view'>
+         <h3 className='text-2xl font-semibold mb-3'>PVC Status</h3>
           <div className='justify-center items-center  self-center font-semibold'>
-            <img src="Images/picture.jpg" alt="User's picture" className='rounded-full w-20 h-20 ml-3' />
-            <h5 className='pb-2 pt-2 text-gray-800'>Hello User's Name</h5>
+            <div className='flex justify-center items-center'>
+              <img src="Images/picture.jpg" alt="User's picture" className='rounded-full w-20 h-20 ml-3' />
+            </div>
+            <h5 className='pb-2 pt-2 text-gray-800 text-center'>Hello User's Name</h5>
             <h5 className=' text-center text-gray-800'>User's no</h5>
           </div>
           <p className='mt-3 text-sm font-semibold pb-2 md:text-lg md:pt-4'>Polling Unit</p>  
@@ -24,9 +28,11 @@ const Collection = () => {
                  Resend
             </Link>
           </p>
-          <Link to={'/home'} className='w-full mt-14' >
+          <Link to={'/'} className='w-full' >
             <Button label="Close" handleClick={() => {}} />
           </Link>
+        </div>
+          
       </div>
     )
   }

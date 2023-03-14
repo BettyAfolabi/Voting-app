@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import FormInput from '../components/formInput';
 import Button from '../components/button';
+import '../App.css'
 
 
 const Personal = () =>  {
@@ -67,17 +68,19 @@ const Personal = () =>  {
   ];
   
   return (
-    <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
-        <h2 className=' font-semibold text-xl mb-5'> Confirm your Personal Information </h2>
-        <img src="Images/picture.jpg" alt="user profile picture" className='rounded-full w-20 h-20 ml-3 self-center md:mb-3' />
-        <form>
+    <div className='w-full h-screen flex flex-col px-6 pt-8 justify-center items-center app'>
+        <div className='view'>
+          <h2 className=' font-semibold text-xl mb-5 pt-2'> Confirm your Personal Information </h2>
+          <div className='flex justify-center items-center'>  
+           <img src="Images/picture.jpg" alt="user profile picture" className='rounded-full w-20 h-20 ml-3 ' />
+          </div>
           {inputs.map((input) => (
             <FormInput key={input.id} {...input} value={value[input.name]} />
           ))}
           <Link to={'/location'} className='w-full mt-3 mb-2 ' >
             <Button label="Proceed" handleClick={() => {}} />
           </Link>
-        </form>
+        </div>
     </div>
   );
 }

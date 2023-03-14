@@ -6,6 +6,12 @@ input, select{
     background-color:  #F8F8FF;
 }
 
+label{
+    color: black;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
 .formInput{
     display: flex;
     flex-direction: column;
@@ -34,18 +40,4 @@ p.error{
     font-size: 12px;
     padding: 3px;
     color: red;
-}
-
-@media (min-width: 768px){
-    input, select{
-    width: 200px;
-    padding: 10px;
-    margin: 10px 0px;
-    border-radius: 5px;
-    border: 1px solid  gray;
-    background-color:  #F8F8FF;
-    }
-    .formInput, .select{
-    font-size: .85rem;
-    }
 }

@@ -1,8 +1,8 @@
 import React from "react";
-import TextInput from '../components/textinput'
 import FormInput from '../components/formInput';
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/button';
+import '../App.css'
 
 const CheckStatus = () => {
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ const CheckStatus = () => {
   
 
     return (
-      <div className='w-full h-screen flex flex-col px-5 pt-8 box-border font-sans md:w-1/2 md:h-2/4 md:my-20 md:p-8 md:mx-auto md:items-center  md:bg-green-50 md:rounded-3xl'>
+      <div className='w-full h-screen flex flex-col px-5 pt-8 box-border font-sans justify-center items-center app'>
           <form onSubmit={handleSubmit}>
             <h5 className=' font-medium text-2xl mb-5'>Check your PVC status</h5>
             <p className='mb-4 font-bold text-gray-800 text-sm'>Enter VIN/BVN/NIN</p>
