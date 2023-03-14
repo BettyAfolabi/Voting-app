@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import TextInput from '../components/textinput';
-import '../App.css'
 
 const SelectVote = () => {
 
     const [value, setValue] = React.useState('');
 
     return(
-        <div className=' w-full h-screen flex flex-col px-5 pt-12 box-border font-sans justify-center items-center app '>
-            <form className=" md:w-1/3">
+        <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
+            <form>
                 <h1 className='font-semibold text-2xl mb-5'>Select a Vote</h1>
                 <h3 className='mb-2 font-medium text-gray-900 text-sm'>Click a button to vote</h3>
                 <div className=" grid grid-cols-2 gap-7">

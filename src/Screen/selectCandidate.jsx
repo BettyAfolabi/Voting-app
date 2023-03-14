@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/button';
-import '../App.css'
+
 
 const SelectCandidate = () => {
     const navigate = useNavigate();
@@ -13,8 +13,8 @@ const SelectCandidate = () => {
       };
   
       return(
-        <div className=' w-full h-screen flex flex-col px-5 pt-12 box-border font-sans justify-center items-center app '>
-            <form onSubmit={handleSubmit} className=" md:w-2/5">
+        <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
+            <form onSubmit={handleSubmit}>
                 <h1 className='font-semibold text-2xl mb-5'>BBNaija</h1>
                 <h4 className='mb-2 font-medium text-gray-900 text-sm'>Select your favorite candidate</h4>
                 <div className=" grid grid-cols-2 gap-4">

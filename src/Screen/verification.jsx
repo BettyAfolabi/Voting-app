@@ -2,10 +2,10 @@ import React from 'react';
 import Button from '../components/button';
 import FormInput from '../components/formInput';
 import { useNavigate } from 'react-router-dom';
-import '../App.css'
 
 const Verification = () => {
     const navigate = useNavigate();
+
     const [values, setValues] = React.useState({
         OTP: "",
       });
@@ -35,7 +35,7 @@ const Verification = () => {
         console.log(values);
     
         return(
-            <div className=' w-full h-screen flex flex-col px-5 pt-12 box-border font-sans justify-center items-center app'>
+            <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
                 <form onSubmit={handleSubmit}>
                     <h1 className='font-bold text-2xl mb-5'>Verification</h1>
                     {inputs.map((input) => (

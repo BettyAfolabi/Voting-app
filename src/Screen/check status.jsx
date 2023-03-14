@@ -34,7 +34,7 @@ const CheckStatus = () => {
   
 
     return (
-      <div className='w-full h-screen flex flex-col px-5 pt-8 box-border font-sans justify-center items-center app'>
+      <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
           <form onSubmit={handleSubmit}>
             <h5 className=' font-medium text-2xl mb-5'>Check your PVC status</h5>
             <p className='mb-4 font-bold text-gray-800 text-sm'>Enter VIN/BVN/NIN</p>

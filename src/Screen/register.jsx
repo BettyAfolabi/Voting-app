@@ -35,7 +35,7 @@ const Register = () => {
     console.log(values);
 
   return(
-    <div className=' w-full h-100vh flex flex-col px-5 pt-12 font-sans items-center justify-center app '>
+    <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
        <form onSubmit={handleSubmit}>
           <h1 className='font-bold text-2xl mb-5'>Register</h1>
           <h4 className='mb-2 font-medium text-gray-700 text-base'>Choose an ID and enter number</h4>

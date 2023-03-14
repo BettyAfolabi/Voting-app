@@ -1,7 +1,6 @@
 import React from "react";
 import Button from '../components/button';
 import { useNavigate } from 'react-router-dom';
-import '../App.css'
 
 const ConfirmCandidate = () => {
     const navigate = useNavigate();
@@ -13,7 +12,7 @@ const ConfirmCandidate = () => {
       };
     
       return(
-        <div className=' w-full h-screen flex flex-col px-5 pt-12 box-border justify-center items-center font-sans app'>
+        <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
             <form onSubmit={handleSubmit}>
                 <h1 className='font-semibold text-2xl mb-5 text-start'>Confirm Candidate</h1>
                 <div className=" w-full h-32 bg-stone-500 rounded-lg"></div>

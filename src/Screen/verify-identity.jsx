@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../components/button'
 import FormInput from '../components/formInput';
 import { useNavigate } from 'react-router-dom';
-import '../App.css'
+
 
 
 const Verify = () => {
@@ -49,7 +49,7 @@ const Verify = () => {
 
   
   return(
-    <div className='w-full h-screen flex flex-col px-6 font-sans justify-center items-center app'>
+    <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
       <form onSubmit={handleSubmit}>
         <h1 className='font-semibold text-2xl mb-5 '>Verify your Identity</h1>
         {inputs.map((input) => (

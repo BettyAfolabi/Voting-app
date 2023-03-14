@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from '../components/button';
 import { useNavigate } from 'react-router-dom';
-import '../App.css'
 
 const Location = () => {
   const navigate = useNavigate();
@@ -21,8 +20,8 @@ const Location = () => {
     console.log(values);
 
   return(
-    <div className='w-full h-100vh flex flex-col px-6 pt-8 justify-center items-center app'>    
-      <form onSubmit={handleSubmit} className='md:w-1/3'>
+    <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-96 md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>    
+      <form onSubmit={handleSubmit}>
         <p className='mb-5 font-semibold text-black text-xl  md:text-xl'>Choose Polling Unit</p>
         <select onChange={onChange} errorMessage = "Must choose Polling Unit!" required={true}>
           <option value={''}>Select polling unit</option>

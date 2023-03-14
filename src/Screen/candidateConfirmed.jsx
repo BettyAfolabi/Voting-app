@@ -13,7 +13,7 @@ const CandidateConfirmed = () => {
       };
     
       return(
-        <div className=' w-full h-screen flex flex-col px-5 pt-12 box-border items-center justify-center app '>
+        <div className='w-full h-screen flex flex-col px-6 pt-8 md:w-80 md:h-full md:my-8 md:p-8 md:mx-auto md:bg-green-50 md:rounded-3xl'>
             <form onSubmit={handleSubmit}>
                 <div className="flex justify-center items-center">
                     <img src='Images/check.png' alt='successful' className='w-60 h-60 '/>
