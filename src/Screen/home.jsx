@@ -55,7 +55,7 @@ const Home = () => {
             ))}
             <Button type="button" label="Log In" handleClick={() => {}}  />
             <p className='text-gray-600 font-medium text-xs mt-3'>Don't have an account?    
-              <Link to={'/Register'} className='w-full text-green-500 text-bold'  >
+              <Link to={'/Register'} className='w-full text-green-500 text-semibold'  >
                    Sign Up
               </Link>
             </p>
