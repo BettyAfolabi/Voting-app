@@ -54,9 +54,9 @@ const Home = () => {
             <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
             ))}
             <Button type="button" label="Log In" handleClick={() => {}}  />
-            <p className='text-gray-600 font-medium text-xs mt-3'>Don't have an account? 
-              <Link to={'/Register'} className='w-full text-black font-semibold' >
-                 Sign Up
+            <p className='text-gray-600 font-medium text-xs mt-3'>Don't have an account?    
+              <Link to={'/Register'} className='w-full text-green-500 text-bold'  >
+                   Sign Up
               </Link>
             </p>
           </form>
